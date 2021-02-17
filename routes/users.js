@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 })
-.('/login', (req, res, next) => {
+.get('/login', (req, res, next) => {
   res.status(200).json({"Message" : "hi!"});
 });
 
